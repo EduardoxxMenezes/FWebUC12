@@ -1,0 +1,9 @@
+#central{
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    background-color: grey;
+    border-radius: 10px;
+    width: 25%;
+    padding: 10px;
+}
