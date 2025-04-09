@@ -39,19 +39,29 @@ main{
     border-radius: 5px;
 }
 
-.personagem [data-classe="MAGE"]{
-background-color: blue;
+.personagem[data-classe="MAGE"]{
+background-color: rgb(48, 48, 127);
 }
 
-.personagem [data-classe="WARRIOR"]{
+.personagem[data-classe="MAGE"] h4{
+    color:aquamarine;
+}
+.personagem[data-classe="WARRIOR"]{
     background-color: red;
 }
 
-.personagem [data-classe="HEALER"]{
+.personagem[data-classe="WARRIOR"] h4{
+    color:brown;
+}
+
+.personagem[data-classe="HEALER"]{
     background-color: green;
 }
 
-.personagem [data-classe="PAIN"]{
-    background-color: gray;
+.personagem[data-classe="HEALER"] h4{
+    color:lawngreen;
+}
 
+.personagem[data-classe="PAIN"]{
+    background-color: gray;
 }
