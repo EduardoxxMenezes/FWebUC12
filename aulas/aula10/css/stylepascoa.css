@@ -36,7 +36,12 @@ main{
 #envelope img{
     width: auto;
     height: auto;
+    transition: linear 10s;
 
+}
+
+#envelope img:hover{
+    rotate: 25deg;
 }
 
 #ovo{
@@ -45,5 +50,10 @@ main{
     top: 10px;
     width: 150px;
     height: auto;
+    transition: linear 6s;
 
+}
+
+#ovo:hover{
+    transform: scale(1.5);
 }
