@@ -1,0 +1,10 @@
+#botoes{
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(4,1fr);
+}
+
+main{
+    display: flex;
+    
+}

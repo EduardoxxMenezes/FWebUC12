@@ -31,14 +31,25 @@ main{
 
 #envelope h1{
     text-shadow: 1px 1px 1px black;
+    transition: linear 1s;
 }
 
+
+#envelope:hover{
+    color: brown;
+}
+
+#envelope p{
+    color: black;
+}
 #envelope img{
     width: auto;
     height: auto;
-    transition: linear 10s;
+    transition: linear 7s;
 
 }
+
+
 
 #envelope img:hover{
     rotate: 25deg;
@@ -50,10 +61,31 @@ main{
     top: 10px;
     width: 150px;
     height: auto;
-    transition: linear 6s;
+    transition: linear 5s;
 
 }
 
 #ovo:hover{
     transform: scale(1.5);
 }
+
+ button{
+    display: flex;
+    justify-content: center;
+    border-radius: 10%;
+    background-color: rgb(41, 121, 121);
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+
+}
+
+#coelho{
+    position: absolute;
+    opacity: 0;
+    width: 1%;
+    height: 1px;
+    border-radius: 5%;
+    transition: all linear 5s;
+}
+
