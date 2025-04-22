@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main>
+        <div id="calculadora">
+
+        <input type="text" id="inputText">
+        <div id="botoes">
+
+
+            <button class="botao" onclick="addNumber('7')">7</button>
+            <button class="botao" onclick="addNumber('8')">8</button>
+            <button class="botao" onclick="addNumber('9')">9</button>
+            <button class="botao" onclick="removeNumber()">C</button>
+
+            <button class="botao" onclick="addNumber('4')">4</button>
+            <button class="botao" onclick="addNumber('5')">5</button>
+            <button class="botao" onclick="addNumber('6')">6</button>
+            <button class="botao" onclick="addOperator('+')">+</button>
+            
+            <button class="botao" onclick="addNumber('1')">1</button>
+            <button class="botao" onclick="addNumber('2')">2</button>
+            <button class="botao" onclick="addNumber('3')">3</button>
+            <button class="botao" onclick="addOperator('-')">-</button>
+
+           
+           
+          
+            <button class="botao" onclick="addDecimal()">.</button>
+            <button class="botao" onclick="addNumber('0')">0</button>
+            <button class="botao" onclick="addOperator('/')">/</button>
+            <button class="botao" onclick="addOperator('x')">*</button>
+           
+            <button class="botao" onclick="clearText()">DEL</button>
+            <button class="botao" onclick="piada()">πada</button>
+            <button class="botao" id="equal" onclick="calculate()">=</button>    
+           
+        </div>
+    </div>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

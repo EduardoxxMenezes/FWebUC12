@@ -1,0 +1,63 @@
+#botoes{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(4,1fr);
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/joke.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0px;
+}
+
+#calculadora{
+
+    background-color: rgb(167, 166, 166);
+    padding: 2vh;
+    border-radius: 3%;
+}
+
+#equal{
+    grid-row: span 4;
+    background-color: rgb(69, 69, 173);
+    color: white;
+    
+}
+
+.botao{
+    font-size: 25px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    width: 105px;
+    height: 100px;
+    border: none;
+    font-size: 2rem;
+    transition: linear 0.2s;
+}
+
+.botao:active{
+    transform: scale(1.05);
+    background-color: rgb(230, 223, 223);
+}
+
+
+#inputText{
+    border: none;
+    background-color: rgb(235, 230, 230);
+    width: 450px;
+    height: 11vh;
+    margin-bottom: 1vh;
+    border-radius: 3%;
+    font-size: 1.5rem;
+    padding-left:2vh;
+    text-align: right;
+}
+
