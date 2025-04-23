@@ -4,4 +4,56 @@ html, body, main{
   height: 100%;
   margin: 0px;
   padding: 0px;
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+}
+
+
+.carousel-item{
+  background-image: url('https://funfactor.pt/wp-content/uploads/2018/12/47355493_762474447425539_3542355370653515776_n1.jpg?w=1920&h=768&crop=1'); 
+  background-repeat: no-repeat; 
+  background-size: 100%;
+}
+
+#carousel1{
+  background-image: url('https://funfactor.pt/wp-content/uploads/2018/12/47355493_762474447425539_3542355370653515776_n1.jpg?w=1920&h=768&crop=1'); 
+  background-repeat: no-repeat;
+   background-size: 100%;
+    background-position: 10%;
+}
+
+#carousel2{
+  background-image: url('https://miro.medium.com/v2/resize:fit:1400/1*lSpGBQHq45R9fFqoimKfGw.jpeg'); 
+  background-repeat: no-repeat;
+   background-size: 100%; 
+   background-position: 10%;
+}
+
+#carousel3{
+  background-image: url('https://i.ytimg.com/vi/JsUxJ3i15rk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAjgXVmWxn6Lno61QDfEN8rBfnRNg'); 
+  background-repeat: no-repeat;
+   background-size: 100%; 
+   background-position: 10%;
+}
+
+
+
+#feat1{
+  background-image: url('https://images.squarespace-cdn.com/content/v1/606d4deb4db8c15ea53b3624/1617787294699-IIVCOXMV9R1NALLHUYEY/Hornet_silhouette_wide.jpg?format=2500w');
+   background-repeat: no-repeat; 
+   background-size: cover; 
+   background-position: center;
+}
+
+#feat2{
+  background-image: url('https://i.redd.it/vm8ihej1wasa1.png');
+   background-repeat: no-repeat;
+    background-size: cover;
+     background-position: center;
+}
+
+
+#feat3{
+  background-image: url('https://i.redd.it/hrmeg642i8cb1.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;
 }
