@@ -57,3 +57,13 @@ html, body, main{
 #feat3{
   background-image: url('https://i.redd.it/hrmeg642i8cb1.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;
 }
+
+.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+
+  #footer *{
+    border-bottom: none;
+  }
