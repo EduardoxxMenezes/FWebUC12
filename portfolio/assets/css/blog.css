@@ -63,11 +63,13 @@ header h1{
 #section2{
     background-color: rgb(36, 37, 37);
     height: 82vh;
+    padding-bottom: 10vh;
 }
 
 #section3{
     background-color: rgb(26, 27, 31);
     height: 82vh;
+    padding-bottom: 5px;
 }
 
 #container{
@@ -114,7 +116,10 @@ header h1{
 
 #container3 img{
     width: auto;
-     height: 110%;    
+     height: 110%;  
+     position:relative;
+     right: 60vh;  
+
     -webkit-mask-image: linear-gradient(to right, transparent, black 50%);
     mask-image: linear-gradient(to right, transparent, black 50%);
 }
