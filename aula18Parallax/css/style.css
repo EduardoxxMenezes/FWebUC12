@@ -1,0 +1,36 @@
+body, main, HTML{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.parallax1{
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.part1{
+    background-image: url('https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/07/felicidade-3.jpg');
+}
+
+.part2{
+    background-image: url('https://s2.glbimg.com/733VUvBnQPN0LMsG3HTXRy_g5TA=/940x523/e.glbimg.com/og/ed/f/original/2015/02/24/488182127.jpg');
+}
+
+.otherPart{
+    display: flex;
+    font-size: 3rem;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+    color: white;
+}

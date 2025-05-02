@@ -4,9 +4,9 @@ let audio = new Audio('/aulas/aula10/js/audio.mp3');
 
 
 botao.onclick = function(){
-  
+    audio.play();
     coelho.style.opacity = "1";
     coelho.style.width = "100%";
     coelho.style.height = "700px";
-        audio.play();
+     
 }
