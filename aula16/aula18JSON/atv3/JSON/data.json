@@ -1,0 +1,40 @@
+{
+    "Pessoas": [
+        {
+            "nome": "fabiana",
+            "idade": 17,
+            "humor": "ansiosa",
+            "cpf" : "042.930.013.19",
+            "telefone" : "03242414"
+        },
+        {
+            "nome": "Katia",
+            "idade": 19,
+            "humor": "doente",
+            "cpf" : "042.930.013.20",
+            "telefone" : "032422444"
+        },
+        {
+            "nome": "sla",
+            "idade": 1,
+            "humor": "???",
+            "cpf" : "042.204o9,23",
+            "telefone" : "918292389"
+        },
+        {
+            "nome": "juliana",
+            "idade": 21,
+            "humor": "nao identificado",
+            "cpf" : "042.93343452",
+            "telefone" : "0678574234"
+        },
+        {
+            "nome": "carla",
+            "idade": 13,
+            "humor": "arrependida",
+            "cpf" : "042.64320.013.29",
+            "telefone" : "03342414"
+        }
+
+    ]
+}
