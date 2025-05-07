@@ -3,9 +3,79 @@ body, HTML, main{
     height: 100%;
     padding: 0px;
     margin: 0px;
-}
-body{
-    display: flex;
-    justify-content: center;
     background-color: antiquewhite;
 }
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+#figPokedex{
+    width: 400px;
+    height: 600px;
+}
+
+#figPokedex img{
+    height: 99%;
+}
+
+#container{
+    position: relative;
+}
+
+#pokemonImg{
+    position: absolute;
+    top: 35%;
+    left: 32%;
+    width: auto;
+    height: 500px;
+}
+
+#pokeImg{
+    width: auto;
+    height: 60px;
+}
+
+
+#form{
+    position: absolute;
+    top: 55%;
+    left: 30%;
+}
+
+#idNomePokemon{
+    position: absolute;
+    top: 65%;
+    left: 40%;
+}
+
+#info1{
+    position: absolute;
+    top: 70%;
+    left: 40%;
+}
+
+#info2{
+    position: absolute;
+    top: 75%;
+    left: 40%;
+}
+
+#botoes{
+    position: absolute;
+    top: 82%;
+    left: 16%;
+    display: flex;
+    justify-content: space-between;
+    width: 290px;
+}
+
+#botoes button{
+    height: 60px;
+    width: 60px;
+   
+
+}
+
+
