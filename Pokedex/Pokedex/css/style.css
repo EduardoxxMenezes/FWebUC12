@@ -1,0 +1,151 @@
+body, HTML, main{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-image: url("../img/poke.jpg");
+    background-size: cover;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#figPokedex{
+    width: 83%;
+    height: 97%;
+}
+
+#figPokedex img{
+    height: 99%;
+}
+
+#container{
+    position: relative;
+}
+
+#pokemonImg{
+    position: absolute;
+    top: 35%;
+    left: 32%;
+    width: auto;
+    height: 10%;
+}
+
+#pokeImg{
+    width: auto;
+    height: 10vh;
+}
+
+#form{
+    position: absolute;
+    top: 55%;
+    left: 28%;
+}
+
+#inputForm{
+    width: 100%;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.806);
+}
+
+#idNomePokemon{
+    position: absolute;
+    top: 65%;
+    left: 28%;
+    font-weight: bold;
+}
+
+#info1{
+    position: absolute;
+    top: 68%;
+    left: 28%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgba(0, 0, 0, 0.603);
+}
+
+#habilidade{
+position: relative;
+bottom: 2vh;
+}
+
+#info2{
+    position: absolute;
+    top: 75%;
+    left: 28%;
+}
+
+#tipoImg{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+}
+
+#TI1{
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+
+#TI2{
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+
+#botoes{
+    position: absolute;
+    top: 85%;
+    left: 16%;
+    display: flex;
+    justify-content: space-between;
+    width: 290px;
+}
+
+#botoes button{
+    height: 60px;
+    width: 60px;
+    background: none;
+    border: none;
+}
+
+#btnVoltar{
+    transform: rotate(-90deg);
+}
+
+#btnProximo{
+    transform: rotate(90deg);
+}
+
+#setaE{
+    width: 150px;
+    height: auto;
+    position: relative;
+    right: 14vh;
+    bottom: 4vh;
+    transition: 0.3s linear;
+}
+
+#setaE:hover{
+    width: 152px;
+}
+
+#setaD{
+    width: 150px;
+    height: auto;
+    position: relative;
+    right: 15vh;
+    bottom: 4vh;
+    transition: 0.3s ease-out;
+}
+
+#setaD:hover{
+    width: 152px;
+    height: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+}
