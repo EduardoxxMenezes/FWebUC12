@@ -4,7 +4,7 @@ body, HTML, main{
     height: 100%;
     padding: 0px;
     margin: 0px;
-    background-image: url("../img/images.jfif");/* Define imagem de fundo */
+    background-image: url("../img/background2.jpg");/* Define imagem de fundo */
     background-size: cover;/* Faz com que a imagem cubra toda a tela */
     overflow: hidden;
 }
@@ -258,12 +258,12 @@ bottom: 2vh;
     }
     #form{
         transform: scale(1.6);
-        left: 36%;
+        left: 40%;
         top: 51%;
     }
 
     #inputForm{
-        width: 20%;
+        width: 60%;
     }
     
     #setaD{/*Corrige a posição da seta da direita*/
