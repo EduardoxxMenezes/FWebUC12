@@ -86,15 +86,15 @@ const showPokemon = async (pokemon) => {
         tipo2img.style.display = "inline"; // Mostra imagem do segundo tipo
     } else {
         tipo2.innerHTML = '';
-        tipo2img.src = '';
+        tipo2img.src = ''; 
         tipo2img.style.display = "none"; // Esconde imagem do segundo tipo
     }
 
     // Exibe habilidade, peso e altura
-    habilidade.innerHTML = dataPokemon.abilities[0].ability.name;
-    pesoPokemon.innerHTML = (dataPokemon.weight / 10).toFixed(2) + "Kg";
+    habilidade.innerHTML = "habilidade: " + dataPokemon.abilities[0].ability.name; //Habilidades
+    pesoPokemon.innerHTML = "peso: " +(dataPokemon.weight / 10).toFixed(2) + "Kg"; //peso
     console.log(dataPokemon.weight);
-    alturaPokemon.innerHTML = (dataPokemon.height / 10).toFixed(2) + "M";
+    alturaPokemon.innerHTML = "altura: " +(dataPokemon.height / 10).toFixed(2) + "M"; //Altura
 
     // Define o som do Pokémon e inicia a reprodução
     audioPokemon.src = dataPokemon.cries.latest;

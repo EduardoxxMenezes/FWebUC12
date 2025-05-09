@@ -4,9 +4,9 @@ body, HTML, main{
     height: 100%;
     padding: 0px;
     margin: 0px;
-    background-image: url("../img/poke.jpg");/* Define imagem de fundo */
+    background-image: url("../img/images.jfif");/* Define imagem de fundo */
     background-size: cover;/* Faz com que a imagem cubra toda a tela */
-    background-repeat: no-repeat;/* Faz com que a imagem não se repita */
+    overflow: hidden;
 }
 
 
@@ -29,6 +29,9 @@ main{/* Define o layout principal com centralização e fonte */
 
 #container{/* Define o contêiner principal com position relative */
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #pokemonImg{ /*Estiliza a figure do pokemon*/
@@ -46,12 +49,12 @@ main{/* Define o layout principal com centralização e fonte */
 
 #form{ /*Posiciona o form no centro da pokedex*/
     position: absolute;
-    top: 55%;
+    top: 56%;
     left: 28%;
 }
 
 #inputForm{ /*Define um tamanho e um efeito de sombreamento na barra de busca*/
-    width: 100%;
+    width: 30vh;
     box-shadow: 1px 1px rgba(0, 0, 0, 0.806);
 }
 
@@ -101,139 +104,386 @@ bottom: 2vh;
 
 #botoes{ /*Define a posição onde os botões vão ficar e o distânciamento entre os 2 elementos.*/
     position: absolute;
-    top: 85%;
-    left: 16%;
+    top: 74%;
+    right: 57%;
     display: flex;
     justify-content: space-between;
-    width: 290px;
+    width: 42vh;
 }
 
 #botoes button{ /*Define o tamanho dos botões*/
-    height: 60px;
-    width: 60px;
+    height: 6vh;
+    width: 6vh;
     background: none;
     border: none;
 }
 
-#btnVoltar{ /*Arruma o lado da seta*/
-    transform: rotate(-90deg);
-}
-
-#btnProximo{ /*Arruma o lado da seta*/
-    transform: rotate(90deg);
-}
-
 #setaE{ /*Define o estilo, posição e tamanho da seta da esquerda*/
-    width: 150px;
+    width: 40vh;
     height: auto;
-    position: relative;
-    right: 14vh;
-    bottom: 4vh;
-    transition: 0.3s ease-out;
+  
 }
 
 #setaE:hover{ /*faz uma animação quando passa o mouse por cima*/
-    width: 152px;
+    width: 40.2vh;
 }
 
 #setaD{/*Define o estilo, posição e tamanho da seta da direita*/
-    width: 150px;
+    width: 40vh;
     height: auto;
-    position: relative;
-    right: 15vh;
-    bottom: 4vh;
-    transition: 0.3s ease-out;
+   
 }
 
 #setaD:hover{/*faz uma animação quando passa o mouse por cima*/
-    width: 152px;
+    width: 40.2vh;
     height: auto;
 }
 
-
-@media screen and (max-height: 600px) { /*Media Query para redefinir a escala dos elementos em telas de alturas menores que 600PX*/
-    #info1 {
-        transform:scale(0.9);
-    }
-    #info2{
-        transform:scale(0.9);
-    }
-    #tipoimg{
-        transform:scale(0.9);
-    }
-    #botoes{
-        transform:scale(0.8);
-    }
-    #TI1{
-        transform: scale(0.9);
-    }
-    
-    #TI2{
-        transform: scale(0.9);
-    }
-    #form{
-        transform: scale(0.9);
-        left: 33%;
-    }
-    
-    #setaD{/*Corrige a posição da seta da direita*/
-        width: 150px;
-        height: auto;
-        position: relative;
-        right: 17vh;
-        bottom: 6.8vh;
-        transition: 0.3s ease-out;
-    }
-    #setaE{/*Corrige a posição da seta da esquerda*/
-        width: 150px;
-        height: auto;
-        position: relative;
-        right: 15vh;
-        bottom: 10vh;
-        transition: 0.3s ease-out;
-    }
+#music{
+    position: absolute;
+    bottom: 63vh;
+    left: 58vh;
+    background-color: rgb(179, 27, 27);
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px solid rgba(0, 0, 0, 0.884);
+    width: 7vh;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1vh;
 }
 
 
-@media screen and (min-height: 800px) {/*Media Query para redefinir a escala dos elementos em telas de alturas maiores que 800PX*/
-    #info1{
-        transform:scale(1.6);
+@media screen and (max-width: 700px) and (min-width: 451px){ /*Media Query para redefinir a escala dos elementos em telas menores que 700PX e maiores que 500PX*/
+    #figPokedex img{
+        height: 90%;
+    }
+    #idNomePokemon{
+        top: 60%;
+    }
+
+    #info1 {
+        transform:scale(0.9);
+        top: 63%;
     }
     #info2{
-        transform:scale(1.6);
+        transform:scale(0.9);
+        top:  68%;
     }
-    #tipoimg{
-        transform:scale(1.6);
+    #tipoImg{
+        transform:scale(0.9);
+        top: 58%;
     }
     #botoes{
-        transform:scale(1.6);
+        top: 70%;
+        right: 50%;
+        width: 40vh;
+        justify-content: space-around;
     }
     #TI1{
-        transform: scale(1.2);
+        transform: scale(0.9);
     }
     
     #TI2{
-        transform: scale(1.2);
+        transform: scale(0.9);
+    }
+    #form{
+        transform: scale(0.9);
+        left: 26%;
+        top: 51%;
+    }
+
+    #inputForm{
+        width: 30vh;
+    }
+    
+    #setaD{/*Corrige a posição da seta da direita*/
+      width: 30vh;
+    }
+
+    #setaD:hover{
+        width: 30.5vh;
+    }
+    #setaE{/*Corrige a posição da seta da esquerda*/
+       width: 30vh;
+    }
+    #setaE:hover{
+        width: 30.5vh;
+    }
+}
+
+@media screen and (max-height: 700px) and (max-width: 400px) {/*Media Query para redefinir a escala dos elementos em telas de alturas maiores que 800PX*/
+    #figPokedex img{
+        height: 90%;
+    }
+
+    #pokemonImg{ 
+        top: 30%;
+        left: 40%;/*Posiciona a imagem dentro da pokedex*/
+        width: auto; 
+        height: 10%;
+    }
+
+    #idNomePokemon{
+        top: 57%;
+        font-size: 1.2rem;
+    }
+
+    #info1 {
+        font-size: 1.2rem;
+        top: 59%;
+    }
+    #info2{
+       font-size:1.2rem;
+        top:  65%;
+    }
+    #tipoImg{
+        transform:scale(1.6);
+        top: 58%;
+        left: 60%;
+    }
+    #botoes{
+        top: 70%;
+        right: 53%;
+        width: 40vh;
+        justify-content: space-around;
+    }
+    #TI1{
+        transform: scale(0.7);
+    }
+    
+    #TI2{
+        transform: scale(0.7);
     }
     #form{
         transform: scale(1.6);
-        left: 33%;
+        left: 36%;
+        top: 51%;
+    }
+
+    #inputForm{
+        width: 20%;
     }
     
-    #setaD{ /*Corrige a posição da seta da direita*/
-        width: 150px;
-        height: auto;
-        position: absolute;
-        right: -4.5vh;
-        bottom: 1.8vh;
-        transition: 0.3s ease-out;
+    #setaD{/*Corrige a posição da seta da direita*/
+      width: 30vh;
+    }
+
+    #setaD:hover{
+        width: 30.5vh;
     }
     #setaE{/*Corrige a posição da seta da esquerda*/
-        width: 150px;
-        height: auto;
-        position: absolute;
-        right: -4.8vh;
-        bottom: -6.5vh;
-        transition: 0.3s ease-out;
+       width: 30vh;
+    }
+    #setaE:hover{
+        width: 30.5vh;
+    }
+}
+
+@media screen and (max-width: 400px) and (min-height: 700px){ /*Media Query para redefinir a escala dos elementos em telas menores que 700PX e maiores que 500PX*/
+    #figPokedex img{
+        height: 90%;
+    }
+    #idNomePokemon{
+        top: 60%;
+    }
+
+    #info1 {
+        transform:scale(0.9);
+        top: 63%;
+    }
+    #info2{
+        transform:scale(0.9);
+        top:  68%;
+    }
+    #tipoImg{
+        transform:scale(0.9);
+        top: 58%;
+    }
+    #botoes{
+        top: 70%;
+        right: 52%;
+        width: 40vh;
+        justify-content: space-around;
+    }
+    #TI1{
+        transform: scale(0.9);
+    }
+    
+    #TI2{
+        transform: scale(0.9);
+    }
+    #form{
+        transform: scale(0.9);
+        left: 26%;
+        top: 51%;
+    }
+
+    #inputForm{
+        width: 30vh;
+    }
+    
+    #setaD{/*Corrige a posição da seta da direita*/
+      width: 30vh;
+    }
+
+    #setaD:hover{
+        width: 30.5vh;
+    }
+    #setaE{/*Corrige a posição da seta da esquerda*/
+       width: 30vh;
+    }
+    #setaE:hover{
+        width: 30.5vh;
+    }
+}
+
+@media screen and (max-width: 450px) and (max-height: 600){ /* Grafico para sistemas operacionais menores que 500px de distancia*/
+    #figPokedex img{
+        height: 80%;
+    }
+    #idNomePokemon{
+        top: 51%;
+    }
+
+    #pokemonImg{ 
+        top: 25%;
+        left: 32%;/*Posiciona a imagem dentro da pokedex*/
+        width: auto; 
+        height: 10%;
+    }
+
+    #info1 {
+        transform:scale(0.7);
+        top: 53%;
+    }
+    #info2{
+        transform:scale(0.7);
+        top:  60%;
+    }
+    #tipoImg{
+        transform:scale(0.7);
+        top: 50%;
+    }
+    #botoes{
+        top: 69%;
+        right: 32%;
+        width: 25vh;
+        justify-content: space-around;
+    }
+
+    #TI1{
+        transform: scale(0.5);
+    }
+    
+    #TI2{
+        transform: scale(0.5);
+    }
+    #form{
+        transform: scale(0.5);
+        left: 26%;
+        top: 45%;
+    }
+
+    #inputForm{
+        width: 10vh;
+    }
+    
+    #setaD{/*Corrige o tamanho da seta da direita*/
+      width: 5vh;
+    
+      top: -40%;
+
+    }
+
+    #setaD:hover{
+        width:21vh;
+       
+    }
+
+    #setaE{/*Corrige o tamanho da seta da esquerda*/
+       width: 5vh;
+       top: -40%;
+       left: -25%
+
+       
+    }
+
+    #setaE:hover{
+        width: 21vh;
+       
+    }
+    figure{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-height: 800px) {/*Media Query para redefinir a escala dos elementos em telas de alturas maiores que 800PX*/
+    #figPokedex img{
+        height: 90%;
+    }
+
+    #pokemonImg{ 
+        top: 30%;
+        left: 40%;/*Posiciona a imagem dentro da pokedex*/
+        width: auto; 
+        height: 10%;
+    }
+
+    #idNomePokemon{
+        top: 57%;
+        font-size: 1.5rem;
+    }
+
+    #info1 {
+        font-size: 2.3rem;
+        top: 59%;
+    }
+    #info2{
+       font-size:1.8rem;
+        top:  65%;
+    }
+    #tipoImg{
+        transform:scale(1.6);
+        top: 58%;
+        left: 60%;
+    }
+    #botoes{
+        top: 71%;
+        right: 44%;
+        width: 40vh;
+        justify-content: space-around;
+    }
+    #TI1{
+        transform: scale(0.7);
+    }
+    
+    #TI2{
+        transform: scale(0.7);
+    }
+    #form{
+        transform: scale(1.6);
+        left: 36%;
+        top: 51%;
+    }
+
+    #inputForm{
+        width: 18vh;
+    }
+    
+    #setaD{/*Corrige a posição da seta da direita*/
+      width: 30vh;
+    }
+
+    #setaD:hover{
+        width: 30.5vh;
+    }
+    #setaE{/*Corrige a posição da seta da esquerda*/
+       width: 30vh;
+    }
+    #setaE:hover{
+        width: 30.5vh;
     }
 }

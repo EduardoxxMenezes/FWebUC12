@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade para dispositivos móveis -->
-    <title>Document</title> <!-- Título da página exibido na aba do navegador -->
+    <title>Pokedex</title> <!-- Título da página exibido na aba do navegador -->
     <link rel="stylesheet" href="./css/style.css"> <!-- Link para o arquivo CSS externo -->
 </head>
 <body>
@@ -11,8 +11,8 @@
         <div id="container"> <!-- Contêiner que agrupa todos os elementos da interface -->
 
             <!-- Áudio de fundo com reprodução automática, em loop e silenciado por padrão -->
-            <audio id="intro" muted autoplay loop>
-                <source src="../audios/Pokémon Música Tema - 1°Abertura：Tema Pokémon.mp3"> <!-- Caminho do arquivo de áudio -->
+            <audio src="../audios/Pokémon Música Tema - 1°Abertura：Tema Pokémon.mp3" id="intro" muted loop>
+                 <!-- Caminho do arquivo de áudio -->
             </audio>
 
             <!-- Imagem da Pokédex como fundo/interface -->
@@ -63,12 +63,12 @@
             <div id="botoes">
                 <button id="btnVoltar"> <!-- Botão de voltar -->
                     <figure>
-                        <img src="./img/setas.png" alt="<" id="setaE"> <!-- Imagem de seta esquerda -->
+                        <img src="./img/setaEsquerda.png" alt="<" id="setaE"> <!-- Imagem de seta esquerda -->
                     </figure>
                 </button>
                 <button id="btnProximo"> <!-- Botão de próximo -->
                     <figure>
-                        <img src="./img/setas.png" alt=">" id="setaD"> <!-- Imagem de seta direita -->
+                        <img src="./img/setaDireita.png" alt=">" id="setaD"> <!-- Imagem de seta direita -->
                     </figure>
                 </button>
             </div>
