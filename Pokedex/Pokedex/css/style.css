@@ -1,0 +1,239 @@
+/*Define o estilo e o tamanho base para o Body, HTML e Main*/
+body, HTML, main{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-image: url("../img/poke.jpg");/* Define imagem de fundo */
+    background-size: cover;/* Faz com que a imagem cubra toda a tela */
+    background-repeat: no-repeat;/* Faz com que a imagem não se repita */
+}
+
+
+
+main{/* Define o layout principal com centralização e fonte */
+    display: flex;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+#figPokedex{/* Estiliza a figure da Pokédex */
+    width: 83%;
+    height: 97%;
+}
+
+#figPokedex img{/* Estiliza o tamanho da imagem da Pokédex */
+    height: 99%; 
+}
+
+#container{/* Define o contêiner principal com position relative */
+    position: relative;
+}
+
+#pokemonImg{ /*Estiliza a figure do pokemon*/
+    position: absolute; 
+    top: 35%;
+    left: 32%;/*Posiciona a imagem dentro da pokedex*/
+    width: auto; 
+    height: 10%;
+}
+
+#pokeImg{ /*Define o tamanho e a largura da foto dos pokemons*/
+    width: auto;
+    height: 10vh;
+}
+
+#form{ /*Posiciona o form no centro da pokedex*/
+    position: absolute;
+    top: 55%;
+    left: 28%;
+}
+
+#inputForm{ /*Define um tamanho e um efeito de sombreamento na barra de busca*/
+    width: 100%;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.806);
+}
+
+#idNomePokemon{ /*Define a posição do nome e do ID do pokemon*/
+    position: absolute;
+    top: 65%;
+    left: 28%;
+    font-weight: bold; /* Deixa o nome e o ID em negrito*/
+}
+
+#info1{
+    position: absolute;
+    top: 68%;
+    left: 28%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /*define a fonte dos tipos para Cambria Serifada*/
+    color: rgba(0, 0, 0, 0.603); /*Deixa o texto em um tom mais transparente*/
+}
+
+#habilidade{ /*Posiciona as habilidades abaixo do nome e tipos*/
+position: relative;
+bottom: 2vh;
+}
+
+#info2{ /*Posiciona informações extras como altura e peso.*/
+    position: absolute;
+    top: 75%;
+    left: 28%;
+}
+
+#tipoImg{ /*Posiciona as imagens do tipo dos pokemons ao lado das informações*/
+    position: absolute;
+    top: 65%;
+    left: 50%;
+}
+
+#TI1{ /*define um tamanho para a imagem do Tipo 1*/
+    width: 6vh;
+    height: 6vh;
+    border: none;
+}
+
+#TI2{ /*Define um tamanho para a imagem do Tipo 2*/
+    width: 6vh;
+    height: 6vh;
+    border: none;
+}
+
+#botoes{ /*Define a posição onde os botões vão ficar e o distânciamento entre os 2 elementos.*/
+    position: absolute;
+    top: 85%;
+    left: 16%;
+    display: flex;
+    justify-content: space-between;
+    width: 290px;
+}
+
+#botoes button{ /*Define o tamanho dos botões*/
+    height: 60px;
+    width: 60px;
+    background: none;
+    border: none;
+}
+
+#btnVoltar{ /*Arruma o lado da seta*/
+    transform: rotate(-90deg);
+}
+
+#btnProximo{ /*Arruma o lado da seta*/
+    transform: rotate(90deg);
+}
+
+#setaE{ /*Define o estilo, posição e tamanho da seta da esquerda*/
+    width: 150px;
+    height: auto;
+    position: relative;
+    right: 14vh;
+    bottom: 4vh;
+    transition: 0.3s ease-out;
+}
+
+#setaE:hover{ /*faz uma animação quando passa o mouse por cima*/
+    width: 152px;
+}
+
+#setaD{/*Define o estilo, posição e tamanho da seta da direita*/
+    width: 150px;
+    height: auto;
+    position: relative;
+    right: 15vh;
+    bottom: 4vh;
+    transition: 0.3s ease-out;
+}
+
+#setaD:hover{/*faz uma animação quando passa o mouse por cima*/
+    width: 152px;
+    height: auto;
+}
+
+
+@media screen and (max-height: 600px) { /*Media Query para redefinir a escala dos elementos em telas de alturas menores que 600PX*/
+    #info1 {
+        transform:scale(0.9);
+    }
+    #info2{
+        transform:scale(0.9);
+    }
+    #tipoimg{
+        transform:scale(0.9);
+    }
+    #botoes{
+        transform:scale(0.8);
+    }
+    #TI1{
+        transform: scale(0.9);
+    }
+    
+    #TI2{
+        transform: scale(0.9);
+    }
+    #form{
+        transform: scale(0.9);
+        left: 33%;
+    }
+    
+    #setaD{/*Corrige a posição da seta da direita*/
+        width: 150px;
+        height: auto;
+        position: relative;
+        right: 17vh;
+        bottom: 6.8vh;
+        transition: 0.3s ease-out;
+    }
+    #setaE{/*Corrige a posição da seta da esquerda*/
+        width: 150px;
+        height: auto;
+        position: relative;
+        right: 15vh;
+        bottom: 10vh;
+        transition: 0.3s ease-out;
+    }
+}
+
+
+@media screen and (min-height: 800px) {/*Media Query para redefinir a escala dos elementos em telas de alturas maiores que 800PX*/
+    #info1{
+        transform:scale(1.6);
+    }
+    #info2{
+        transform:scale(1.6);
+    }
+    #tipoimg{
+        transform:scale(1.6);
+    }
+    #botoes{
+        transform:scale(1.6);
+    }
+    #TI1{
+        transform: scale(1.2);
+    }
+    
+    #TI2{
+        transform: scale(1.2);
+    }
+    #form{
+        transform: scale(1.6);
+        left: 33%;
+    }
+    
+    #setaD{ /*Corrige a posição da seta da direita*/
+        width: 150px;
+        height: auto;
+        position: absolute;
+        right: -4.5vh;
+        bottom: 1.8vh;
+        transition: 0.3s ease-out;
+    }
+    #setaE{/*Corrige a posição da seta da esquerda*/
+        width: 150px;
+        height: auto;
+        position: absolute;
+        right: -4.8vh;
+        bottom: -6.5vh;
+        transition: 0.3s ease-out;
+    }
+}

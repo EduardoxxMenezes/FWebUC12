@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Define o idioma do documento como inglês -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade para dispositivos móveis -->
+    <title>Document</title> <!-- Título da página exibido na aba do navegador -->
+    <link rel="stylesheet" href="./css/style.css"> <!-- Link para o arquivo CSS externo -->
+</head>
+<body>
+    <main> <!-- Conteúdo principal da página -->
+        <div id="container"> <!-- Contêiner que agrupa todos os elementos da interface -->
+
+            <!-- Áudio de fundo com reprodução automática, em loop e silenciado por padrão -->
+            <audio id="intro" muted autoplay loop>
+                <source src="../audios/Pokémon Música Tema - 1°Abertura：Tema Pokémon.mp3"> <!-- Caminho do arquivo de áudio -->
+            </audio>
+
+            <!-- Imagem da Pokédex como fundo/interface -->
+            <figure id="figPokedex">
+                <img src="./img/pokedexImg.png" alt="pokedex Imagem"> <!-- Imagem da Pokédex -->
+            </figure>
+
+            <!-- Área onde a imagem do Pokémon será exibida -->
+            <figure id="pokemonImg">
+                <img id="pokeImg" src="" alt="pokemon fugiu..."> <!-- Imagem do Pokémon carregada dinamicamente -->
+            </figure>
+
+            <!-- Formulário para pesquisar o Pokémon -->
+            <form action="search" id="form">
+                <input type="text" id="inputForm"> <!-- Campo de entrada de texto para busca -->
+            </form>
+
+            <!-- Exibição do ID e nome do Pokémon -->
+            <div id="idNomePokemon">
+                <span id="idPokemon">ID</span> <!-- Span para o ID do Pokémon -->
+                <span id="nomePokemon">NomePokemon</span> <!-- Span para o nome do Pokémon -->
+            </div>
+
+            <!-- Primeira linha de informações: tipos do Pokémon -->
+            <div id="info1">
+                <span id="tipo1">tipo 1  </span> <!-- Span para o primeiro tipo -->
+                <span id="tipo2">tipo 2  </span> <!-- Span para o segundo tipo -->
+            </div>
+
+            <!-- Imagens dos tipos do Pokémon -->
+            <div id="tipoImg">
+                <figure id="tipo1Img">
+                    <img id="TI1" src="" alt=""> <!-- Imagem do primeiro tipo -->
+                </figure>
+                <figure id="tipo2Img">
+                    <img id="TI2" src="" alt=""> <!-- Imagem do segundo tipo -->
+                </figure>
+            </div>
+
+            <!-- Segunda linha de informações: habilidade, peso e altura -->
+            <div id="info2">
+                <div id="habilidade">habilidade</div> <!-- Div para exibir a habilidade -->
+                <div id="peso">peso</div> <!-- Div para exibir o peso -->
+                <div id="altura">altura</div> <!-- Div para exibir a altura -->
+            </div>
+
+            <!-- Botões de navegação para Pokémon anterior e próximo -->
+            <div id="botoes">
+                <button id="btnVoltar"> <!-- Botão de voltar -->
+                    <figure>
+                        <img src="./img/setas.png" alt="<" id="setaE"> <!-- Imagem de seta esquerda -->
+                    </figure>
+                </button>
+                <button id="btnProximo"> <!-- Botão de próximo -->
+                    <figure>
+                        <img src="./img/setas.png" alt=">" id="setaD"> <!-- Imagem de seta direita -->
+                    </figure>
+                </button>
+            </div>
+
+            <!-- Áudio individual do Pokémon, carregado dinamicamente -->
+            <audio id="audioPokemon" src=""></audio>
+        </div>
+    </main>  
+
+    <!-- Script JavaScript que controla a lógica da aplicação -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
